@@ -1,0 +1,1262 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/"
+     xml:base="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry">
+        <rdfs:comment>This is an ontology of Geometry</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/AppliesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/AppliesTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Shapes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Theorems"/>
+        <rdfs:comment>Shapes AppliesTo  Theorem</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/AppliesToTransformation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/AppliesToTransformation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Theorems"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Operations"/>
+        <rdfs:comment>Theorem Applies to a specific transformation Operations.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/BelongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/BelongsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Triangles"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Level_1"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Triangle_Theorems"/>
+        <rdfs:comment>Triangle BelongsTo level1
+Triangle BelongsTo Triangle_Theorems</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Describes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Describes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Theorems"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Shapes"/>
+        <rdfs:comment>Theorem Describes a Shapes.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Follows -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Follows">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Triangles"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry#Pythagoras&apos;_Theorem"/>
+        <rdfs:comment>RightTriangle Follows PythagoreansTheorem</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasCompleted -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasCompleted">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Level_1"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Level_2"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quizzes"/>
+        <rdfs:comment>Student HasCompleted level1
+Student HasCompleted level2
+Student HasCompleted Quizzes</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasGoal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasGoal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Logical_Operators"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Triangle_Theorems"/>
+        <rdfs:comment>Student HasGoal Triangle_Theorem
+Student HasGoal Logical_Operators</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasInput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasInput">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Operations"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Shapes"/>
+        <rdfs:comment>Operation HasInput Shapes</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasSkill -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasSkill">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Operators"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Skill_1"/>
+        <rdfs:comment>Student HasSkill Operators
+Student HasSkill CanCalculateTriangleArea</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/IsCompleting -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/IsCompleting">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Level_3"/>
+        <rdfs:comment>Student1 IsCompleting Level3</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/ProducesOutput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/ProducesOutput">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Shapes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Operators"/>
+        <rdfs:comment>Shapes  ProducesOutput Operators</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/ReceivesFeedback -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/ReceivesFeedback">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Feedback"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student"/>
+        <rdfs:comment>Feedback ReceivesFeedback Student</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Diameter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Diameter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Circles"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasArea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasArea">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Square"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Triangles"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasAreaCalculation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasAreaCalculation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Circles"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Circle_Theorems"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Triangle_Theorems"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasGoalDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasGoalDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Goal_1"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Theorems"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Describes a student&apos;s learning goal in detail.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasHeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasHeight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Cylinder"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasLevelName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasLevelName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Levels"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quizzes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Stores the name or title of a level in the pedagogy model.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasMeasurement -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasMeasurement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Cylinder"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Shapes"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Stores the name of a student and shapes</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasProgress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasProgress">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Levels"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Tracks the completion percentage of a level or topic.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasRadius -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasRadius">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Circles"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quizzes"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Represents a student&apos;s score in a quiz or assessment.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasSideLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasSideLength">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Triangles"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasVolume -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/HasVolume">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Cylinder"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Radius -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Radius">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Circles"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student_Email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student_Email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student_Id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student_Id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student_password -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student_password">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/TransformationType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/TransformationType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Operations"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry#2D -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry#2D">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Shapes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry#3D -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry#3D">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Shapes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry#Pythagoras&apos;_Theorem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry#Pythagoras&apos;_Theorem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Triangle_Theorems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/AND -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/AND">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Logical_Operators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Addition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Addition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Arithmetic_Operators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Angle_at_the_center -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Angle_at_the_center">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Circle_Theorems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Arithmetic_Operators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Arithmetic_Operators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Operators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Boolean -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Boolean">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Pirimitive_Types"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Circle_Theorems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Circle_Theorems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Theorems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Circles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Circles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry#2D"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Compound_Shapes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Compound_Shapes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry#2D"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Cube -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Cube">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry#3D"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Cylinder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Cylinder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry#3D"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/DataTypes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/DataTypes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Geometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Difference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Difference">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Geometric_Operators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Division -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Division">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Arithmetic_Operators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Equal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Equal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Relational_Operators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Equilateral_Triangle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Equilateral_Triangle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Triangles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Feedback -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Feedback">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Pedagogy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Float -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Float">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Pirimitive_Types"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/General_Rectangle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/General_Rectangle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Rectangles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Geometric_Operators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Geometric_Operators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Operators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Geometry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Geometry">
+        <rdfs:comment xml:lang="en">This is Represent the content of  Geometry Subject in Math</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Goal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Goal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Goal_1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Goal_1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Goal_2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Goal_2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Goal_3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Goal_3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/GreaterThan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/GreaterThan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Relational_Operators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Integer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Integer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Pirimitive_Types"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Intersection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Intersection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Geometric_Operators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Isosceles_Triangle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Isosceles_Triangle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Triangles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/LessThan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/LessThan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Relational_Operators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Level_1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Level_1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Levels"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Level_2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Level_2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Levels"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Level_3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Level_3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Levels"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Levels -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Levels">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Pedagogy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Lines -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Lines">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Reference_Types"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Logical_Operators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Logical_Operators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Operators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Measurements -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Measurements">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Models -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Models">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Reference_Types"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Multiplication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Multiplication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Arithmetic_Operators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/NOT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/NOT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Logical_Operators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/OR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/OR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Logical_Operators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Operations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Operations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Geometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Operators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Operators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Geometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Pedagogy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Pedagogy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/PersonalizedFeedback -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/PersonalizedFeedback">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Feedback"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Pirimitive_Types -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Pirimitive_Types">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/DataTypes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Points -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Points">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Reference_Types"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quiz_1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quiz_1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quizzes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quiz_2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quiz_2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quizzes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quiz_3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quiz_3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quizzes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quizzes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quizzes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Pedagogy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Rectangles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Rectangles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry#2D"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Reference_Types -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Reference_Types">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/DataTypes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Relational_Operators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Relational_Operators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Operators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Scalene_Triangle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Scalene_Triangle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Triangles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Shapes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Shapes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Geometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Sine_Rule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Sine_Rule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Triangle_Theorems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Skill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Skill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Skill_1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Skill_1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Skill_2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Skill_2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Skill_3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Skill_3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Square -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Square">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Rectangles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Substraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Substraction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Arithmetic_Operators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Theorems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Theorems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Geometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Transformations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Transformations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Triangle_Theorems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Triangle_Theorems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Theorems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Triangles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Triangles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry#2D"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Union -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Union">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Geometric_Operators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/areas_in_a_triangles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/areas_in_a_triangles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Triangle_Theorems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/inscribed_angle_theorem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/inscribed_angle_theorem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Circle_Theorems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/tangent_secant_theorem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/tangent_secant_theorem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Circle_Theorems"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Addition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Addition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Arithmetic_Operators"/>
+        <AppliesTo rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quiz_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Area_Calculation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Area_Calculation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Circles"/>
+        <Describes rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Circle_1"/>
+        <HasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">500.0</HasArea>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Area_of_Square -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Area_of_Square">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Square"/>
+        <AppliesToTransformation rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Square"/>
+        <HasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">400.0</HasArea>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Circle_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Circle_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Circles"/>
+        <BelongsTo rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Radius"/>
+        <ProducesOutput rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Area_Calculation"/>
+        <Diameter rdf:datatype="http://www.w3.org/2001/XMLSchema#float">14.0</Diameter>
+        <HasAreaCalculation rdf:datatype="http://www.w3.org/2001/XMLSchema#float">144.0</HasAreaCalculation>
+        <Radius rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</Radius>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Cylinder1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Cylinder1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Cylinder"/>
+        <HasMeasurement rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</HasMeasurement>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Diameter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Diameter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Circles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Division -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Division">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Arithmetic_Operators"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/GeneralRectangle1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/GeneralRectangle1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/General_Rectangle"/>
+        <BelongsTo rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Rectangle1"/>
+        <HasHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</HasHeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Length -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Length">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/General_Rectangle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Level_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Level_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Level_1"/>
+        <HasCompleted rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Level_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Level_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Level_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Level_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Level_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Level_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Multiplication -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Multiplication">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Arithmetic_Operators"/>
+        <AppliesTo rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Area_Calculation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Operation1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Operation1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Operations"/>
+        <HasInput rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Rectangle1"/>
+        <ProducesOutput rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/GeneralRectangle1"/>
+        <HasName>TranslateShape</HasName>
+        <TransformationType>Translation</TransformationType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Perimeter_of_Square -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Perimeter_of_Square">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Square"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/PersonilizedFeedback1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/PersonilizedFeedback1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/PersonalizedFeedback"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/PythagorasTheorem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/PythagorasTheorem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Triangle_Theorems"/>
+        <AppliesTo rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/RightTriangle"/>
+        <HasDescription>In a right-angled triangle, the square of the hypotenuse side is equal to the sum of squares of the other two sides</HasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quiz_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quiz_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quiz_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quiz_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quiz_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quiz_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quiz_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quiz_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quiz_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Radius -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Radius">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Circles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Rectangle1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Rectangle1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Rectangles"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/RightTriangle"/>
+        <BelongsTo rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Level_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/RightTriangle -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/RightTriangle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/RightTriangle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/RightTriangle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry#Pythagoras&apos;_Theorem"/>
+        <Follows rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/PythagorasTheorem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Square -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Square">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Rectangles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student"/>
+        <BelongsTo rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quiz_2"/>
+        <Student_Email>mnusly@gmail.com</Student_Email>
+        <Student_Id>S100</Student_Id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student"/>
+        <AppliesTo rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Quiz_2"/>
+        <HasCompleted rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Level_3"/>
+        <Student_Id>S101</Student_Id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Student"/>
+        <HasCompleted rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Level_2"/>
+        <ReceivesFeedback rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/PersonilizedFeedback1"/>
+        <HasName>Nusly</HasName>
+        <Student_Id>S102</Student_Id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Substraction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Substraction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Arithmetic_Operators"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/TransformationTheorem1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/TransformationTheorem1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Theorems"/>
+        <HasDescription>Transformation that enlarges or shrinks a shape based on a scale factor.</HasDescription>
+        <HasName>ScalingLaw</HasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Volume -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Volume">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Cylinder"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Width -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Width">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/General_Rectangle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/square1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/square1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohamedmohamed_ysj/ontologies/2024/11/Geometry/Square"/>
+        <HasArea rdf:datatype="http://www.w3.org/2001/XMLSchema#float">140.0</HasArea>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
